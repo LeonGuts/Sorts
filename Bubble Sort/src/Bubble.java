@@ -1,4 +1,5 @@
 public class Bubble {
+    private static int counter = 0;
     public static void main(String[] args) {
         int[] array = new int[] {12, 14, 32, 45, 25, 54, 64, 87, 98, 23};
 
@@ -10,11 +11,11 @@ public class Bubble {
 
 
     private static void bubbleSort (int[] arr) {
-        int counter = 0;
         boolean isSorted = false;
         while(!isSorted) {
             isSorted = true;
             for (int i = 1; i < arr.length; i++) {
+                counter++;
                 if (arr[i] < arr[i - 1]) {
                     int temp = arr[i];
                     arr[i] = arr[i - 1];
@@ -22,7 +23,7 @@ public class Bubble {
                     isSorted = false;
                 }
             }
-            counter++;
+
             printArray(arr);
         }
         System.out.println("Количество итераций: " + counter);
