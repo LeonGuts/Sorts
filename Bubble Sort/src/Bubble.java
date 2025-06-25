@@ -1,4 +1,4 @@
-public class Main {
+public class Bubble {
     public static void main(String[] args) {
         int[] array = new int[] {12, 14, 32, 45, 25, 54, 64, 87, 98, 23};
 
