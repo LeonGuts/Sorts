@@ -21,7 +21,7 @@ public class Merge {
 
             size = size * 2;
 
-            System.out.println(arrayToString(currentArr));
+            // System.out.println(arrayToString(currentArr));
         }
         return currentArr;
     }

@@ -22,8 +22,8 @@ public class Insertion {
             }
             arr[j] = current;
             count++;
-            System.out.println(Arrays.toString(arr));
+            // System.out.println(Arrays.toString(arr));
         }
-        System.out.println("Колличество итераций: " + count);
+        // System.out.println("Колличество итераций: " + count);
     }
 }

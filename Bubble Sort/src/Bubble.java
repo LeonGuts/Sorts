@@ -3,14 +3,14 @@ public class Bubble {
     public static void main(String[] args) {
         int[] array = new int[] {12, 14, 32, 45, 25, 54, 64, 87, 98, 23};
 
-        printArray(array);
+        // printArray(array);
         bubbleSort(array);
 
 
     }
 
 
-    private static void bubbleSort (int[] arr) {
+    public static void bubbleSort (int[] arr) {
         boolean isSorted = false;
         while(!isSorted) {
             isSorted = true;
@@ -24,9 +24,9 @@ public class Bubble {
                 }
             }
 
-            printArray(arr);
+            // printArray(arr);
         }
-        System.out.println("Количество итераций: " + counter);
+        // System.out.println("Количество итераций: " + counter);
     }
 
     private static void printArray (int[] arr) {

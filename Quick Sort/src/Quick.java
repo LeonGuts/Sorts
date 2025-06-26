@@ -9,10 +9,10 @@ public class Quick {
 
 
 
-    private static void quickSort(int[] arr, int from, int to) {
+    public static void quickSort(int[] arr, int from, int to) {
         if (from < to) {
             int divideIndex = partition(arr, from, to);
-            printSortStep(arr, from, to, divideIndex);
+            // printSortStep(arr, from, to, divideIndex);
             quickSort(arr, from, divideIndex-1);
             quickSort(arr, divideIndex, to);
         }
