@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Bubble Sort/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Insertion Sort/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Merge Sort/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
