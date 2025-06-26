@@ -46,7 +46,7 @@ public class Merge {
         }
     }
 
-    private static StringBuilder arrayToString(int[] arr) {
+    private static String arrayToString(int[] arr) {
         StringBuilder sb = new StringBuilder();
         sb.append("-> ");
         for (int i = 0; i < arr.length; i++) {
@@ -57,6 +57,6 @@ public class Merge {
             sb.append(arr[i]).append(", ");
         }
         sb.append("<-");
-        return sb;
+        return sb.toString();
     }
 }
