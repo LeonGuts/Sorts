@@ -1,8 +1,8 @@
+import java.util.Arrays;
+
 public class Quick {
     public static void main(String[] args) {
         int[] array = new int[] {12, 14, 32, 45, 25, 54, 64, 87, 98, 23};
-
-        System.out.println(arrayToString(array));
 
         quickSort(array, 0, array.length-1);
     }
@@ -12,9 +12,9 @@ public class Quick {
     private static void quickSort(int[] arr, int from, int to) {
         if (from < to) {
             int divideIndex = partition(arr, from, to);
+            printSortStep(arr, from, to, divideIndex);
             quickSort(arr, from, divideIndex-1);
             quickSort(arr, divideIndex, to);
-            System.out.println(arrayToString(arr));
         }
     }
 
@@ -48,6 +48,12 @@ public class Quick {
         array[index2] = tmp;
     }
 
+    private static void printSortStep (int[] arr, int from, int to, int partIndex) {
+        System.out.println(arrayToString(arr));
+        System.out.println("Partition at index: " + partIndex);
+        System.out.println("Left: " + arrayToString(Arrays.copyOfRange(arr, from, partIndex))
+        + " Right: " + arrayToString(Arrays.copyOfRange(arr, partIndex, to + 1)));
+    }
 
 
     private static String arrayToString(int[] arr) {
